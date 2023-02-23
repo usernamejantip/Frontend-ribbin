@@ -49,13 +49,13 @@ const RoomList = (props) => {
         <img
             src={props.room.image}
             alt=""
-            style={{ width: "200px", height: "200px" }}
+            style={{ width: "600px", height: "400px" }}
           />
           <div className="card-text">
             <hr />
-            <h5>Room {props.room.room_number}</h5>
+            <h5>Room :{props.room.room_number}</h5>
             <p>   “Ribbin Salaya" หอพักสไตล์โมเดรินพร้อมด้วยเฟอร์นิเจอร์บิ้วอินสวย</p>
-            <h5>{props.room.price} THB.</h5>
+            <h5>Price :{props.room.price} THB.</h5>
             <hr />
             <NavLink to={'/room/' + props.room._id} className="btn btn-primary">
               Learn More

@@ -44,7 +44,7 @@ const Booking = () => {
       </NavLink>
       </div>
       <div class="row">
-        <img src="/แผง.jpg" width="500" height="500" alt="แผงวงจร" />
+        <img src="/แผง.jpg" width="550" height="450" alt="แผงวงจร" />
       </div>
       <div className="row mt-3">
         <div className="col-md-7"></div>

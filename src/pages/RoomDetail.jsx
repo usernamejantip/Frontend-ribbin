@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import RoomService from "../services/RoomService";
+import { NavLink } from 'react-router-dom';
 
 const RoomDetail = () => {
   let params = useParams();
@@ -49,7 +50,9 @@ const handleInputChange = event => {
       <hr />
       <div className="row mt-3">
         <div className="col-md-4">
-          <img src={room.image} alt="" />
+        <NavLink to={`/room/${room._id}`}>
+          <img src={room.image} alt="" style={{ width: "400px", height: "250px" }} />
+        </NavLink>
         </div>
         <div className="col-md-8 border p-4">
           <p>
@@ -71,7 +74,7 @@ const handleInputChange = event => {
             {room.floor}
           </p>
           <p className="text-center">
-            <button className="btn btn-primary">Add to Cart</button>
+            <button className="btn btn-primary">Booking Now</button>
           </p>
         </div>
       </div>

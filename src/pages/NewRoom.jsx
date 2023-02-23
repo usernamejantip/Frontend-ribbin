@@ -35,7 +35,7 @@ const NewRoom = () => {
       };
   return (
     <MainLayout>
-      <h1 className="mt-3">𝗔𝗱𝗱 𝗮 𝗡𝗮𝘄 𝗥𝗼𝗼𝗺</h1>
+      <h1 className="mt-3">𝗔𝗱𝗱 𝗮 𝗡𝗲𝘄 𝗥𝗼𝗼𝗺</h1>
       <hr />
       <div className="row">
         <div className="col-md-8 offset-md-2">
